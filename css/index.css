@@ -1,0 +1,85 @@
+*{
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            body, html{
+                width: 100vw;
+                height: 100vh;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: bold;
+            }
+			h2 > img{
+				height: 125px;
+				padding-right: 8px;
+			}
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                grid-row-gap: 1em;
+            }
+            .r1, .r3{
+                background-color: #ccc;
+                padding: 1em;
+                align-items: center;
+            }
+            .r2{
+                height: 100%;
+                background-color: #f1f1f1;
+            }
+            .r3{
+                text-align: center;
+                align-items: center;
+            }
+            .three-column{
+                display: grid;
+                grid-template-columns: 2fr 8fr 3fr;
+                background-color: #fff;
+                grid-column-gap: 1em;
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #f4f4f4;
+            }
+            .txt-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid black;
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a{
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #f4f4f4;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.8s;
+            }
+            .left-nav > li > a:hover{
+                background-color: #8d8c8c;
+            }
+            .c2{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                /* grid-template-rows: 1fr 1fr 1fr; */
+                grid-gap: 1em;
+                grid-auto-rows: min-content;
+            }
+            .h2-content{
+                grid-column: 1 / 5;
+                height: 21px;
+                width: 100%;
+            }
+            .c2 > img{
+                width: 100%;
+                align-self: center;
+                max-height: 130px;
+            }

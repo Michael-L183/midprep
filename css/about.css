@@ -1,0 +1,92 @@
+*{
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+            p{
+                margin: 15px auto 20px;
+            }
+            body, html{
+                width: 100vw;
+                height: 100vh;
+            }
+            h2{
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .main-container-grid{
+                display: grid;
+                grid-template-rows: 1fr 13fr 1fr;
+                height: 100%;
+                grid-row-gap: 1em;
+            }
+            .r1, .r3{
+                display: grid;
+                background-color: #ccc;
+                padding: 1em;
+                align-items: center;
+            }
+            .r2{
+                height: 100%;
+                background-color: #f1f1f1;
+            }
+            .r3{
+                text-align: center;
+            }
+            .one-column{
+                /* display: grid;
+                background-color: #fff;
+                grid-column-gap: 1em; */
+            }
+            .c1{
+                min-width: 200px;
+            }
+            .c1, .c3{
+                background-color: #f4f4f4;
+            }
+            .txt-center{
+                text-align: center;
+                margin: 15px auto 0px;
+                border-bottom: 1px solid #a8a7a7;
+                padding-bottom: 15px;
+            }
+            .left-nav{
+                list-style-type: none;
+            }
+            .left-nav > li > a{
+                display: block;
+                padding: 15px 0px 15px 30px;
+                background-color: #f4f4f4;
+                font-weight: bold;
+                text-decoration: none;
+                transition-duration: 0.8s;
+            }
+            .left-nav > li > a:hover{
+                background-color: #8d8c8c;
+            }
+            .c2{
+                padding: 40px 20%;
+                height: 100%;
+            }
+            .h2-content{
+                grid-column: 1 / 5;
+                height: 21px;
+                width: 100%;
+            }
+            .c2 > img{
+                display: block;
+                margin: auto;
+                width: 25%;
+                align-self: center;
+                max-height: 200px;
+                
+            }
+            .back-button{
+                padding: 7px 16px;
+                background-color: #ccc;
+                float: right;
+                margin-bottom: 15px;
+            }
+            .back-button:hover{
+                background-color: #f1f1f1;
+            }
